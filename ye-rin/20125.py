@@ -40,8 +40,8 @@ def leg(y,x):
         cnt += 1
     return cnt - 1
 
-n=int(input())
-arr=[]
+N = int(input())
+arr = []
 for _ in range(n):
     row = input()
     arr.append(list(row))
