@@ -26,7 +26,6 @@ def solution(numbers):
         if flag:
             answer.add(p)
     return len(answer)
-
 # 이전 코드
 from itertools import permutations
 
