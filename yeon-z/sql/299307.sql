@@ -1,0 +1,10 @@
+-- 대장균의 크기에 따라 분류하기 1
+-- 100이하 LOW
+-- 100초과 1000이하 MEDIUM
+-- 1000초과 HIGH
+SELECT ID, (CASE
+           WHEN SIZE_OF_COLONY <= 100 THEN 'LOW'
+           WHEN SIZE_OF_COLONY > 1000 THEN 'HIGH'
+           ELSE 'MEDIUM' END) AS SIZE
+FROM ECOLI_DATA
+ORDER BY ID;

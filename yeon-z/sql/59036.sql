@@ -1,0 +1,11 @@
+-- 아픈 동물 찾기
+-- 현재 코드
+-- 동물 보호소에 들어온 동물 중 아픈 동물의 아이디와 이름 조회
+-- 아이디 순으로 정렬 조회
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+WHERE INTAKE_CONDITION='Sick'
+ORDER BY ANIMAL_ID;
+
+-- 예전 코드
+SELECT ANIMAL_ID, NAME FROM ANIMAL_INS WHERE INTAKE_CONDITION = "Sick" ORDER BY ANIMAL_ID ASC
